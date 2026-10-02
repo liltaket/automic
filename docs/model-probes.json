@@ -1,0 +1,106 @@
+[
+  {
+    "text": "Bruno, what do you think?",
+    "decision": "UNMUTE",
+    "confidence": 0.4133,
+    "probabilities": {
+      "UNMUTE": 0.4133,
+      "STAY_MUTED": 0.2977,
+      "UNCERTAIN": 0.289
+    },
+    "source": "ollaya",
+    "reason": "Ollaya selected UNMUTE from native turn probabilities.",
+    "latencyMs": 950.1161669999999
+  },
+  {
+    "text": "Bruno, vad tycker du?",
+    "decision": "UNMUTE",
+    "confidence": 0.4453,
+    "probabilities": {
+      "UNMUTE": 0.4453,
+      "STAY_MUTED": 0.2583,
+      "UNCERTAIN": 0.2964
+    },
+    "source": "ollaya",
+    "reason": "Ollaya selected UNMUTE from native turn probabilities.",
+    "latencyMs": 86.09783300000004
+  },
+  {
+    "text": "Bruno, over to you.",
+    "decision": "UNMUTE",
+    "confidence": 0.4931,
+    "probabilities": {
+      "UNMUTE": 0.4931,
+      "STAY_MUTED": 0.2335,
+      "UNCERTAIN": 0.2734
+    },
+    "source": "ollaya",
+    "reason": "Ollaya selected UNMUTE from native turn probabilities.",
+    "latencyMs": 82.17558399999984
+  },
+  {
+    "text": "Bruno nämnde det igår.",
+    "decision": "STAY_MUTED",
+    "confidence": 0.99,
+    "probabilities": {
+      "UNMUTE": 0.005,
+      "STAY_MUTED": 0.99,
+      "UNCERTAIN": 0.005
+    },
+    "source": "rules",
+    "reason": "The name is mentioned in third person, not addressed directly.",
+    "latencyMs": 0.04341700000009041
+  },
+  {
+    "text": "Jag och Bruno diskuterade det.",
+    "decision": "STAY_MUTED",
+    "confidence": 0.99,
+    "probabilities": {
+      "UNMUTE": 0.005,
+      "STAY_MUTED": 0.99,
+      "UNCERTAIN": 0.005
+    },
+    "source": "rules",
+    "reason": "The name is mentioned in third person, not addressed directly.",
+    "latencyMs": 0.008500000000140062
+  },
+  {
+    "text": "Vad tycker ni?",
+    "decision": "UNCERTAIN",
+    "confidence": 0.8,
+    "probabilities": {
+      "UNMUTE": 0.05,
+      "STAY_MUTED": 0.15,
+      "UNCERTAIN": 0.8
+    },
+    "source": "rules",
+    "reason": "The caption addresses a group or uses a plural audience.",
+    "latencyMs": 0.003249999999979991
+  },
+  {
+    "text": "Bruno?",
+    "decision": "UNCERTAIN",
+    "confidence": 0.8,
+    "probabilities": {
+      "UNMUTE": 0.05,
+      "STAY_MUTED": 0.15,
+      "UNCERTAIN": 0.8
+    },
+    "source": "rules",
+    "reason": "A name alone is not enough to infer a speaking turn.",
+    "latencyMs": 0.019667000000026746
+  },
+  {
+    "text": "Bruno, do not unmute.",
+    "decision": "STAY_MUTED",
+    "confidence": 0.99,
+    "probabilities": {
+      "UNMUTE": 0.005,
+      "STAY_MUTED": 0.99,
+      "UNCERTAIN": 0.005
+    },
+    "source": "rules",
+    "reason": "The caption contains a negative or wait instruction.",
+    "latencyMs": 0.0020829999998568383
+  }
+]

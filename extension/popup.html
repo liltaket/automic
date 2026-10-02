@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Automic settings</title>
+    <link rel="stylesheet" href="popup.css" />
+    <script type="module" src="popup.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Automic</h1>
+      <p class="intro">Your mic knows when it may be your turn to talk.</p>
+      <form id="settings-form">
+        <label for="name">Your name</label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          maxlength="80"
+          autocomplete="name"
+          placeholder="Bruno Hjorth"
+        />
+
+        <label for="aliases">Aliases</label>
+        <input
+          id="aliases"
+          name="aliases"
+          type="text"
+          maxlength="500"
+          placeholder="Bruno, Hjorth"
+        />
+        <span class="hint">Separate names with commas.</span>
+
+        <label for="mode">Mode</label>
+        <select id="mode" name="mode">
+          <option value="off">Off</option>
+          <option value="shadow">Shadow</option>
+          <option value="notify">Notify only</option>
+          <option value="auto">Auto-unmute</option>
+        </select>
+
+        <label for="threshold">Auto-unmute confidence threshold</label>
+        <input
+          id="threshold"
+          name="threshold"
+          type="number"
+          min="0.97"
+          max="1"
+          step="0.01"
+          value="0.97"
+        />
+
+        <label class="check"
+          ><input
+            id="notify-before"
+            name="notifyBeforeUnmute"
+            type="checkbox"
+          />
+          Show an in-page notice before unmuting</label
+        >
+        <label class="check"
+          ><input id="debug" name="debug" type="checkbox" /> Debug mode
+          (temporary in-memory log)</label
+        >
+
+        <label for="backend">Local classifier</label>
+        <select id="backend" name="backend">
+          <option value="ollaya">Ollaya · Laya multilingual</option>
+          <option value="rules">Rules demo</option>
+        </select>
+        <p id="backend-note" class="note" role="status">
+          Ollaya requests go only to the configured loopback service.
+        </p>
+
+        <button type="submit">Save settings</button>
+        <p
+          id="save-status"
+          class="save-status"
+          role="status"
+          aria-live="polite"
+        ></p>
+      </form>
+      <section class="meeting" aria-label="Meeting status">
+        <h2>Meeting</h2>
+        <p id="meeting-status">Checking Google Meet…</p>
+      </section>
+      <p class="privacy">
+        Settings are stored in Chrome local storage. Caption text is used in
+        memory for decisions and is not saved.
+      </p>
+    </main>
+  </body>
+</html>

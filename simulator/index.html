@@ -1,0 +1,177 @@
+<!doctype html>
+<!-- DIRECTION: A compact recording console: persistent mic tally, conversation and decision monitor. OWN-WORLD: warm paper, forest-green controls, ruled rows. STORY: send a caption and inspect a local turn decision without entering a meeting. FIRST VIEWPORT: settings rail, central transcript, right decision panel. FORM: recording console, grounded candidate 4, seed 57a62a18. FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Automic · Meeting simulator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="/" aria-label="Automic home"
+        ><span class="mark" aria-hidden="true">a.</span>
+        <span data-brand>Automic</span></a
+      ><span class="header-note">Your mic knows when it’s your turn.</span
+      ><span class="local">Local only</span>
+    </header>
+    <main>
+      <div class="intro">
+        <h1>A little less “you’re muted.”</h1>
+        <p>
+          Try a conversation. Watch the decision. Keep control of your
+          microphone.
+        </p>
+      </div>
+      <div class="console">
+        <aside class="settings">
+          <h2>Participant</h2>
+          <form id="settings-form">
+            <label for="name">Your name</label
+            ><input
+              id="name"
+              value="Bruno Hjorth"
+              autocomplete="off"
+              maxlength="100"
+            /><label for="aliases">Aliases <span>comma separated</span></label
+            ><input id="aliases" value="Bruno, Hjorth" maxlength="250" />
+            <label for="backend">Classifier</label
+            ><select id="backend">
+              <option value="rules">Rules · instant demo</option>
+              <option value="ollaya">Laya · local Ollaya</option>
+            </select>
+            <p id="backend-note" class="hint">
+              Rules demonstrate the pipeline. They cannot automatically unmute.
+            </p>
+            <label for="mode">Mode</label
+            ><select id="mode">
+              <option value="shadow">Shadow · observe</option>
+              <option value="notify">Notify only</option>
+              <option value="auto">Auto-unmute</option>
+              <option value="off">Off</option></select
+            ><label for="threshold">Auto threshold (%)</label
+            ><input
+              id="threshold"
+              type="number"
+              min="97"
+              max="100"
+              step="0.1"
+              value="97"
+            /><label class="check"
+              ><input id="notice" type="checkbox" checked /> Notify before
+              unmuting</label
+            ><button class="primary" type="submit">Apply settings</button>
+            <p id="saved" role="status" class="hint">
+              Settings apply to this simulator only.
+            </p>
+          </form>
+          <div class="safety">
+            <strong>You stay in control.</strong>
+            <p>
+              Shadow mode never changes mic state. Auto-unmute requires Laya and
+              a direct invitation. This page uses a simulated mic.
+            </p>
+          </div>
+        </aside>
+        <section class="conversation">
+          <div class="section-head">
+            <h2>Meeting simulator</h2>
+            <button id="reset" class="quiet">Reset</button>
+          </div>
+          <p class="hint">Synthetic captions · no microphone access</p>
+          <div class="mobile-status" aria-live="polite">
+            <strong id="mobile-mic">Mic muted · simulated</strong
+            ><span id="mobile-decision">Waiting for a caption</span>
+          </div>
+          <div
+            id="transcript"
+            class="transcript"
+            role="log"
+            aria-label="Conversation"
+          >
+            <div id="empty" class="empty">
+              <span aria-hidden="true">“ ”</span>
+              <h3>Give yourself the floor.</h3>
+              <p>Pick a scenario below, or write a caption.</p>
+            </div>
+          </div>
+          <form id="caption-form" class="composer">
+            <label for="speaker">Speaker</label
+            ><input id="speaker" value="Anna" maxlength="100" /><label
+              for="caption"
+              >Caption</label
+            ><textarea
+              id="caption"
+              rows="3"
+              maxlength="1000"
+              placeholder="Bruno, what do you think?"
+              required
+            ></textarea
+            ><button type="submit" class="primary">
+              Send caption <span aria-hidden="true">↗</span>
+            </button>
+          </form>
+          <div class="scenarios">
+            <h3>Try a scenario</h3>
+            <div class="scenario-buttons">
+              <button data-scenario="direct">Direct question</button
+              ><button data-scenario="mention">Name mentioned</button
+              ><button data-scenario="group">Group question</button
+              ><button data-scenario="handoff">Handoff</button
+              ><button data-scenario="torture">False-positive test</button>
+            </div>
+          </div>
+        </section>
+        <aside class="monitor">
+          <div class="section-head">
+            <h2>Decision monitor</h2>
+            <span id="engine-status" class="dot-label">Ready</span>
+          </div>
+          <div id="mic-display" class="mic-display">
+            <span id="mic-symbol" aria-hidden="true">◉</span
+            ><strong id="mic-status">Mic muted</strong>
+            <p>Simulated microphone</p>
+            <button id="toggle-mic" class="quiet">Unmute manually</button>
+          </div>
+          <div class="verdict" aria-live="polite">
+            <span>Latest decision</span>
+            <h3 id="decision">Waiting for a caption</h3>
+            <p id="reason">Only a direct invitation should open the mic.</p>
+            <dl>
+              <div>
+                <dt>UNMUTE probability</dt>
+                <dd id="confidence">—</dd>
+              </div>
+              <div>
+                <dt>Latency</dt>
+                <dd id="latency">—</dd>
+              </div>
+              <div>
+                <dt>Action</dt>
+                <dd id="action">—</dd>
+              </div>
+            </dl>
+          </div>
+          <div id="notice-box" class="notice" hidden>
+            <strong>Your turn?</strong>
+            <p id="notice-text"></p>
+            <button id="cancel">Cancel pending unmute</button>
+          </div>
+          <div class="log">
+            <div class="section-head">
+              <h3>Session log</h3>
+              <button id="clear-log" class="quiet">Clear</button>
+            </div>
+            <p class="hint">Memory only. Cleared on reload.</p>
+            <ol id="events" aria-label="Decision events"></ol>
+          </div>
+        </aside>
+      </div>
+      <footer>
+        <span>v0.1 · Google Meet + local turn detection</span
+        ><span>No recording. No cloud inference. Never auto-mutes.</span>
+      </footer>
+    </main>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+{
+  "backend": "ollaya",
+  "cases": 12,
+  "accuracy": 0.9167,
+  "false_unmute_rate": 0.125,
+  "unmute_precision": 0.8,
+  "unmute_recall": 1,
+  "auto_threshold_recall_at_0_97": 0,
+  "false_auto_unmute_rate_at_0_97": 0,
+  "candidate_filtered_cases": 7,
+  "false_unmute_case_ids": [
+    "no-name-generic"
+  ],
+  "false_auto_unmute_case_ids": [],
+  "confusion": {
+    "UNMUTE": {
+      "UNMUTE": 4,
+      "STAY_MUTED": 0,
+      "UNCERTAIN": 0
+    },
+    "STAY_MUTED": {
+      "UNMUTE": 0,
+      "STAY_MUTED": 4,
+      "UNCERTAIN": 0
+    },
+    "UNCERTAIN": {
+      "UNMUTE": 1,
+      "STAY_MUTED": 0,
+      "UNCERTAIN": 3
+    }
+  },
+  "results": [
+    {
+      "id": "direct-en",
+      "expected": "UNMUTE",
+      "decision": "UNMUTE",
+      "source": "ollaya",
+      "p_unmute": 0.4646,
+      "reason": "Ollaya selected UNMUTE from native turn probabilities."
+    },
+    {
+      "id": "direct-sv",
+      "expected": "UNMUTE",
+      "decision": "UNMUTE",
+      "source": "ollaya",
+      "p_unmute": 0.5171,
+      "reason": "Ollaya selected UNMUTE from native turn probabilities."
+    },
+    {
+      "id": "direct-why",
+      "expected": "UNMUTE",
+      "decision": "UNMUTE",
+      "source": "ollaya",
+      "p_unmute": 0.4567,
+      "reason": "Ollaya selected UNMUTE from native turn probabilities."
+    },
+    {
+      "id": "explicit-handoff",
+      "expected": "UNMUTE",
+      "decision": "UNMUTE",
+      "source": "ollaya",
+      "p_unmute": 0.5087,
+      "reason": "Ollaya selected UNMUTE from native turn probabilities."
+    },
+    {
+      "id": "bare-name",
+      "expected": "UNCERTAIN",
+      "decision": "UNCERTAIN",
+      "source": "rules",
+      "p_unmute": 0.05,
+      "reason": "A name alone is not enough to infer a speaking turn."
+    },
+    {
+      "id": "third-person-mention",
+      "expected": "STAY_MUTED",
+      "decision": "STAY_MUTED",
+      "source": "rules",
+      "p_unmute": 0.005,
+      "reason": "The name is mentioned in third person, not addressed directly."
+    },
+    {
+      "id": "group-we",
+      "expected": "UNCERTAIN",
+      "decision": "UNCERTAIN",
+      "source": "rules",
+      "p_unmute": 0.05,
+      "reason": "The caption addresses a group or uses a plural audience."
+    },
+    {
+      "id": "named-group",
+      "expected": "UNCERTAIN",
+      "decision": "UNCERTAIN",
+      "source": "rules",
+      "p_unmute": 0.05,
+      "reason": "The caption addresses a group or uses a plural audience."
+    },
+    {
+      "id": "quoted-address",
+      "expected": "STAY_MUTED",
+      "decision": "STAY_MUTED",
+      "source": "rules",
+      "p_unmute": 0.005,
+      "reason": "The name is mentioned in third person, not addressed directly."
+    },
+    {
+      "id": "negative-command",
+      "expected": "STAY_MUTED",
+      "decision": "STAY_MUTED",
+      "source": "rules",
+      "p_unmute": 0.005,
+      "reason": "The caption contains a negative or wait instruction."
+    },
+    {
+      "id": "no-name-generic",
+      "expected": "UNCERTAIN",
+      "decision": "UNMUTE",
+      "source": "ollaya",
+      "p_unmute": 0.4931,
+      "reason": "Ollaya selected UNMUTE from native turn probabilities."
+    },
+    {
+      "id": "co-discussion",
+      "expected": "STAY_MUTED",
+      "decision": "STAY_MUTED",
+      "source": "rules",
+      "p_unmute": 0.005,
+      "reason": "The name is mentioned in third person, not addressed directly."
+    }
+  ]
+}

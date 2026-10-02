@@ -1,0 +1,440 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-02T00:10:54.365701+00:00",
+  "title": "Design System: Automic",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Primary",
+        "tonalRamp": [
+          "oklch(15% 0.06152 159.33)",
+          "oklch(26% 0.06152 159.33)",
+          "oklch(38% 0.06152 159.33)",
+          "oklch(49% 0.06152 159.33)",
+          "oklch(61% 0.06152 159.33)",
+          "oklch(72% 0.06152 159.33)",
+          "oklch(84% 0.06152 159.33)",
+          "oklch(95% 0.06152 159.33)"
+        ]
+      },
+      "primary-hover": {
+        "role": "primary",
+        "displayName": "Primary Hover",
+        "tonalRamp": [
+          "oklch(15% 0.05722 158.41)",
+          "oklch(26% 0.05722 158.41)",
+          "oklch(38% 0.05722 158.41)",
+          "oklch(49% 0.05722 158.41)",
+          "oklch(61% 0.05722 158.41)",
+          "oklch(72% 0.05722 158.41)",
+          "oklch(84% 0.05722 158.41)",
+          "oklch(95% 0.05722 158.41)"
+        ]
+      },
+      "brand": {
+        "role": "primary",
+        "displayName": "Brand",
+        "tonalRamp": [
+          "oklch(15% 0.06026 161.91)",
+          "oklch(26% 0.06026 161.91)",
+          "oklch(38% 0.06026 161.91)",
+          "oklch(49% 0.06026 161.91)",
+          "oklch(61% 0.06026 161.91)",
+          "oklch(72% 0.06026 161.91)",
+          "oklch(84% 0.06026 161.91)",
+          "oklch(95% 0.06026 161.91)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "tonalRamp": [
+          "oklch(15% 0.00802 98.88)",
+          "oklch(26% 0.00802 98.88)",
+          "oklch(38% 0.00802 98.88)",
+          "oklch(49% 0.00802 98.88)",
+          "oklch(61% 0.00802 98.88)",
+          "oklch(72% 0.00802 98.88)",
+          "oklch(84% 0.00802 98.88)",
+          "oklch(95% 0.00802 98.88)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface",
+        "tonalRamp": [
+          "oklch(15% 0.00666 97.35)",
+          "oklch(26% 0.00666 97.35)",
+          "oklch(38% 0.00666 97.35)",
+          "oklch(49% 0.00666 97.35)",
+          "oklch(61% 0.00666 97.35)",
+          "oklch(72% 0.00666 97.35)",
+          "oklch(84% 0.00666 97.35)",
+          "oklch(95% 0.00666 97.35)"
+        ]
+      },
+      "settings-surface": {
+        "role": "neutral",
+        "displayName": "Settings Surface",
+        "tonalRamp": [
+          "oklch(15% 0.01067 112.37)",
+          "oklch(26% 0.01067 112.37)",
+          "oklch(38% 0.01067 112.37)",
+          "oklch(49% 0.01067 112.37)",
+          "oklch(61% 0.01067 112.37)",
+          "oklch(72% 0.01067 112.37)",
+          "oklch(84% 0.01067 112.37)",
+          "oklch(95% 0.01067 112.37)"
+        ]
+      },
+      "mic-surface": {
+        "role": "neutral",
+        "displayName": "Mic Surface",
+        "tonalRamp": [
+          "oklch(15% 0.01517 123.04)",
+          "oklch(26% 0.01517 123.04)",
+          "oklch(38% 0.01517 123.04)",
+          "oklch(49% 0.01517 123.04)",
+          "oklch(61% 0.01517 123.04)",
+          "oklch(72% 0.01517 123.04)",
+          "oklch(84% 0.01517 123.04)",
+          "oklch(95% 0.01517 123.04)"
+        ]
+      },
+      "mic-open": {
+        "role": "neutral",
+        "displayName": "Mic Open",
+        "tonalRamp": [
+          "oklch(15% 0.03813 148.88)",
+          "oklch(26% 0.03813 148.88)",
+          "oklch(38% 0.03813 148.88)",
+          "oklch(49% 0.03813 148.88)",
+          "oklch(61% 0.03813 148.88)",
+          "oklch(72% 0.03813 148.88)",
+          "oklch(84% 0.03813 148.88)",
+          "oklch(95% 0.03813 148.88)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "oklch(15% 0.02654 168.63)",
+          "oklch(26% 0.02654 168.63)",
+          "oklch(38% 0.02654 168.63)",
+          "oklch(49% 0.02654 168.63)",
+          "oklch(61% 0.02654 168.63)",
+          "oklch(72% 0.02654 168.63)",
+          "oklch(84% 0.02654 168.63)",
+          "oklch(95% 0.02654 168.63)"
+        ]
+      },
+      "muted-ink": {
+        "role": "neutral",
+        "displayName": "Muted Ink",
+        "tonalRamp": [
+          "oklch(15% 0.02754 148.96)",
+          "oklch(26% 0.02754 148.96)",
+          "oklch(38% 0.02754 148.96)",
+          "oklch(49% 0.02754 148.96)",
+          "oklch(61% 0.02754 148.96)",
+          "oklch(72% 0.02754 148.96)",
+          "oklch(84% 0.02754 148.96)",
+          "oklch(95% 0.02754 148.96)"
+        ]
+      },
+      "intro-ink": {
+        "role": "neutral",
+        "displayName": "Intro Ink",
+        "tonalRamp": [
+          "oklch(15% 0.02427 156.20)",
+          "oklch(26% 0.02427 156.20)",
+          "oklch(38% 0.02427 156.20)",
+          "oklch(49% 0.02427 156.20)",
+          "oklch(61% 0.02427 156.20)",
+          "oklch(72% 0.02427 156.20)",
+          "oklch(84% 0.02427 156.20)",
+          "oklch(95% 0.02427 156.20)"
+        ]
+      },
+      "quiet-ink": {
+        "role": "neutral",
+        "displayName": "Quiet Ink",
+        "tonalRamp": [
+          "oklch(15% 0.04599 150.15)",
+          "oklch(26% 0.04599 150.15)",
+          "oklch(38% 0.04599 150.15)",
+          "oklch(49% 0.04599 150.15)",
+          "oklch(61% 0.04599 150.15)",
+          "oklch(72% 0.04599 150.15)",
+          "oklch(84% 0.04599 150.15)",
+          "oklch(95% 0.04599 150.15)"
+        ]
+      },
+      "divider": {
+        "role": "neutral",
+        "displayName": "Divider",
+        "tonalRamp": [
+          "oklch(15% 0.01708 125.32)",
+          "oklch(26% 0.01708 125.32)",
+          "oklch(38% 0.01708 125.32)",
+          "oklch(49% 0.01708 125.32)",
+          "oklch(61% 0.01708 125.32)",
+          "oklch(72% 0.01708 125.32)",
+          "oklch(84% 0.01708 125.32)",
+          "oklch(95% 0.01708 125.32)"
+        ]
+      },
+      "field-border": {
+        "role": "neutral",
+        "displayName": "Field Border",
+        "tonalRamp": [
+          "oklch(15% 0.02374 141.22)",
+          "oklch(26% 0.02374 141.22)",
+          "oklch(38% 0.02374 141.22)",
+          "oklch(49% 0.02374 141.22)",
+          "oklch(61% 0.02374 141.22)",
+          "oklch(72% 0.02374 141.22)",
+          "oklch(84% 0.02374 141.22)",
+          "oklch(95% 0.02374 141.22)"
+        ]
+      },
+      "button-border": {
+        "role": "neutral",
+        "displayName": "Button Border",
+        "tonalRamp": [
+          "oklch(15% 0.02483 139.44)",
+          "oklch(26% 0.02483 139.44)",
+          "oklch(38% 0.02483 139.44)",
+          "oklch(49% 0.02483 139.44)",
+          "oklch(61% 0.02483 139.44)",
+          "oklch(72% 0.02483 139.44)",
+          "oklch(84% 0.02483 139.44)",
+          "oklch(95% 0.02483 139.44)"
+        ]
+      },
+      "secondary-hover": {
+        "role": "neutral",
+        "displayName": "Secondary Hover",
+        "tonalRamp": [
+          "oklch(15% 0.01599 130.43)",
+          "oklch(26% 0.01599 130.43)",
+          "oklch(38% 0.01599 130.43)",
+          "oklch(49% 0.01599 130.43)",
+          "oklch(61% 0.01599 130.43)",
+          "oklch(72% 0.01599 130.43)",
+          "oklch(84% 0.01599 130.43)",
+          "oklch(95% 0.01599 130.43)"
+        ]
+      },
+      "focus": {
+        "role": "primary",
+        "displayName": "Focus",
+        "tonalRamp": [
+          "oklch(15% 0.07780 155.19)",
+          "oklch(26% 0.07780 155.19)",
+          "oklch(38% 0.07780 155.19)",
+          "oklch(49% 0.07780 155.19)",
+          "oklch(61% 0.07780 155.19)",
+          "oklch(72% 0.07780 155.19)",
+          "oklch(84% 0.07780 155.19)",
+          "oklch(95% 0.07780 155.19)"
+        ]
+      },
+      "local-surface": {
+        "role": "neutral",
+        "displayName": "Local Surface",
+        "tonalRamp": [
+          "oklch(15% 0.01933 133.08)",
+          "oklch(26% 0.01933 133.08)",
+          "oklch(38% 0.01933 133.08)",
+          "oklch(49% 0.01933 133.08)",
+          "oklch(61% 0.01933 133.08)",
+          "oklch(72% 0.01933 133.08)",
+          "oklch(84% 0.01933 133.08)",
+          "oklch(95% 0.01933 133.08)"
+        ]
+      },
+      "local-ink": {
+        "role": "neutral",
+        "displayName": "Local Ink",
+        "tonalRamp": [
+          "oklch(15% 0.05615 151.89)",
+          "oklch(26% 0.05615 151.89)",
+          "oklch(38% 0.05615 151.89)",
+          "oklch(49% 0.05615 151.89)",
+          "oklch(61% 0.05615 151.89)",
+          "oklch(72% 0.05615 151.89)",
+          "oklch(84% 0.05615 151.89)",
+          "oklch(95% 0.05615 151.89)"
+        ]
+      },
+      "pending-surface": {
+        "role": "neutral",
+        "displayName": "Pending Surface",
+        "tonalRamp": [
+          "oklch(15% 0.06697 92.43)",
+          "oklch(26% 0.06697 92.43)",
+          "oklch(38% 0.06697 92.43)",
+          "oklch(49% 0.06697 92.43)",
+          "oklch(61% 0.06697 92.43)",
+          "oklch(72% 0.06697 92.43)",
+          "oklch(84% 0.06697 92.43)",
+          "oklch(95% 0.06697 92.43)"
+        ]
+      },
+      "on-primary": {
+        "role": "neutral",
+        "displayName": "On Primary",
+        "tonalRamp": [
+          "oklch(15% 0.00000 89.88)",
+          "oklch(26% 0.00000 89.88)",
+          "oklch(38% 0.00000 89.88)",
+          "oklch(49% 0.00000 89.88)",
+          "oklch(61% 0.00000 89.88)",
+          "oklch(72% 0.00000 89.88)",
+          "oklch(84% 0.00000 89.88)",
+          "oklch(95% 0.00000 89.88)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Introduction headline only."
+      },
+      "mic-title": {
+        "displayName": "Mic title",
+        "purpose": "Explicit mic state."
+      },
+      "decision-title": {
+        "displayName": "Decision title",
+        "purpose": "Latest readable verdict."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "Conversation text."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "button-background",
+        "value": "background .15s",
+        "purpose": "Short button background transition; disabled for prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "monitor-wrap",
+        "value": "1100px"
+      },
+      {
+        "name": "mobile-stack",
+        "value": "640px"
+      }
+    ],
+    "tonalRampNote": "Synthesized OKLCH strips are preview metadata, not additional normative palette tokens."
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Full-width principal action.",
+      "html": "<button class=\"ds-primary\">Send caption \u2197</button>",
+      "css": ".ds-primary{font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;font-size:12px;font-weight:600;border-radius:6px;padding:10px 12px;cursor:pointer;transition:background .15s;display:flex;justify-content:space-between;width:100%;background:#244f39;color:#fff;border:1px solid #244f39}.ds-primary:hover{background:#163d29}.ds-primary:focus-visible{outline:2px solid #407554;outline-offset:3px;}.ds-primary:disabled{opacity:.55;cursor:wait}@media(prefers-reduced-motion:reduce){.ds-primary{transition:none}}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Outlined secondary action, including scenario choices.",
+      "html": "<button class=\"ds-secondary\">Direct question</button>",
+      "css": ".ds-secondary{font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;font-size:12px;font-weight:600;border-radius:6px;padding:10px 12px;cursor:pointer;transition:background .15s;background:transparent;color:#263831;border:1px solid #adb9aa}.ds-secondary:hover{background:#e4eadf}.ds-secondary:focus-visible{outline:2px solid #407554;outline-offset:3px;}@media(prefers-reduced-motion:reduce){.ds-secondary{transition:none}}"
+    },
+    {
+      "name": "Quiet Button",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "Underlined reset, clear, and manual mic action.",
+      "html": "<button class=\"ds-quiet\">Reset</button>",
+      "css": ".ds-quiet{font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;font-size:11px;font-weight:600;color:#46604b;background:transparent;border:0;border-radius:6px;padding:4px;text-decoration:underline;text-underline-offset:3px;cursor:pointer;transition:background .15s}.ds-quiet:hover{background:#e4eadf}.ds-quiet:focus-visible{outline:2px solid #407554;outline-offset:3px;}@media(prefers-reduced-motion:reduce){.ds-quiet{transition:none}}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Paper-filled input with a visible green focus ring.",
+      "html": "<label class=\"ds-field-label\" for=\"ds-name\">Your name</label><input class=\"ds-field\" id=\"ds-name\" value=\"Bruno Hjorth\">",
+      "css": ".ds-field-label{font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;display:block;font-size:12px;font-weight:600;color:#263831;margin-bottom:7px}.ds-field{font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;font-size:14px;color:#263831;background:#fffef9;border:1px solid #aab6a8;border-radius:6px;padding:10px 11px;width:100%;box-sizing:border-box}.ds-field:focus{outline:2px solid #407554;outline-offset:2px}"
+    },
+    {
+      "name": "Header Brand",
+      "kind": "nav",
+      "description": "Wordmark with a compact forest tile.",
+      "html": "<a class=\"ds-brand\" href=\"#\" aria-label=\"Automic home\"><span class=\"ds-mark\" aria-hidden=\"true\">t.</span><span>Automic</span></a>",
+      "css": ".ds-brand{font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;display:flex;align-items:center;gap:10px;color:#263831;text-decoration:none;font-size:22px;font-weight:650;letter-spacing:-.025em}.ds-mark{background:#214d39;color:#fff;width:37px;height:37px;display:grid;place-items:center;border-radius:10px;font-size:29px}.ds-brand:focus-visible{outline:2px solid #407554;outline-offset:3px;}"
+    },
+    {
+      "name": "Local Badge",
+      "kind": "chip",
+      "refersTo": "local-badge",
+      "description": "Informational local-only badge.",
+      "html": "<span class=\"ds-local\">Local only</span>",
+      "css": ".ds-local{font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;display:inline-block;background:#e1e9dc;color:#305139;padding:7px 12px;border-radius:20px;font-size:12px;font-weight:600}"
+    },
+    {
+      "name": "Console Container",
+      "kind": "card",
+      "description": "Flat paper container with restrained borders.",
+      "html": "<section class=\"ds-console\"><h2 class=\"ds-section-title\">Meeting simulator</h2><p class=\"ds-hint\">Synthetic captions \u00b7 no microphone access</p></section>",
+      "css": ".ds-console{font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;color:#263831;background:#fffef9;border:1px solid #d4d9cd;border-radius:14px;padding:25px}.ds-section-title{font-size:16px;font-weight:650;margin:0 0 6px}.ds-hint{color:#556457;font-size:11px;line-height:1.55}"
+    },
+    {
+      "name": "Mic Tally",
+      "kind": "custom",
+      "refersTo": "mic-tally",
+      "description": "Prominent simulated microphone state; add ds-open for the open state.",
+      "html": "<div class=\"ds-tally\"><span class=\"ds-symbol\" aria-hidden=\"true\">\u25c9</span><strong class=\"ds-mic-title\">Mic muted</strong><p class=\"ds-mic-hint\">Simulated microphone</p></div>",
+      "css": ".ds-tally{font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;background:#edf1e6;color:#263831;text-align:center;border-radius:10px;padding:24px 10px}.ds-symbol{font-size:40px;display:block;line-height:1.2;color:#576753}.ds-mic-title{display:block;font-size:22px;font-weight:550;margin-top:10px}.ds-mic-hint{font-size:11px;line-height:1.55;margin:7px 0 12px;color:#556457}.ds-open{background:#cce4cf}.ds-open .ds-symbol{color:#235133}"
+    },
+    {
+      "name": "Pending Notice",
+      "kind": "custom",
+      "refersTo": "pending-notice",
+      "description": "Amber notice with an explicit cancellation control.",
+      "html": "<div class=\"ds-notice\"><strong>Your turn?</strong><p>Opening the simulated mic shortly. Cancel to stay muted.</p><button class=\"ds-cancel\">Cancel pending unmute</button></div>",
+      "css": ".ds-notice{font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;background:#f4e4b2;color:#263831;padding:14px;border-radius:8px;font-size:12px}.ds-notice p{line-height:1.55;overflow-wrap:anywhere}.ds-cancel{font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;font-size:12px;font-weight:600;border-radius:6px;padding:10px 12px;cursor:pointer;transition:background .15s;background:#fffef9;color:#263831;width:100%;border:1px solid #adb9aa}.ds-cancel:hover{background:#e4eadf}.ds-cancel:focus-visible{outline:2px solid #407554;outline-offset:3px;}@media(prefers-reduced-motion:reduce){.ds-cancel{transition:none}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Recording Console",
+    "overview": "A compact operating interface with warm paper surfaces, forest-green controls, and ruled information rows. Mic state, caption text, and the resulting decision have distinct visual roles: a tally, a readable conversation, and a concise verdict.\n\nThis document records the implemented simulator system, rather than an approved brand composition. The direction comes from the implementation brief; its descriptive language remains provisional. The simulator is the canonical visual source while the extension palette is brought into alignment.",
+    "keyCharacteristics": [
+      "Warm paper surfaces and a restrained forest-green action accent.",
+      "Flat panels separated by tonal changes and fine rules.",
+      "System sans-serif type with explicit mic-state and decision hierarchy.",
+      "Compact controls, visible focus, and a mobile summary of simulated state."
+    ],
+    "rules": [
+      {
+        "name": "The State Text Rule",
+        "body": "Every mic state or pending action carries readable text alongside its color treatment.",
+        "section": "colors"
+      }
+    ],
+    "dos": [
+      "**Do** use paper tones, green ink, and fine rules to separate working regions.",
+      "**Do** pair state colors with explicit state labels.",
+      "**Do** preserve visible focus outlines and reduced-motion behavior.",
+      "**Do** keep a compact mic-state and decision summary near the mobile conversation."
+    ],
+    "donts": [
+      "**Don't** rely on color alone to distinguish muted, open, or pending states.",
+      "**Don't** remove the simulated-microphone qualifier from simulator state displays.",
+      "**Don't** replace the observed flat panel structure with decorative shadows when extending this system."
+    ]
+  }
+}

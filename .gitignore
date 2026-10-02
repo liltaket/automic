@@ -1,0 +1,10 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+.impeccable/*
+!.impeccable/design.json
+temp/
+.env*
+!.env.example
+.DS_Store

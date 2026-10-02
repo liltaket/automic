@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Automic",
+  "version": "0.1.0",
+  "description": "A local-first Google Meet turn-taking assistant.",
+  "permissions": ["storage"],
+  "host_permissions": ["http://127.0.0.1:11435/*"],
+  "action": {
+    "default_title": "Automic settings",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://meet.google.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

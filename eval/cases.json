@@ -1,0 +1,54 @@
+[
+  {
+    "id": "direct-en",
+    "text": "Bruno, what do you think?",
+    "expected": "UNMUTE"
+  },
+  { "id": "direct-sv", "text": "Bruno, vad tycker du?", "expected": "UNMUTE" },
+  {
+    "id": "direct-why",
+    "text": "Bruno, vet du varför den gör så?",
+    "expected": "UNMUTE"
+  },
+  {
+    "id": "explicit-handoff",
+    "text": "Överlämnar till Bruno.",
+    "expected": "UNMUTE"
+  },
+  { "id": "bare-name", "text": "Bruno?", "expected": "UNCERTAIN" },
+  {
+    "id": "third-person-mention",
+    "text": "Bruno nämnde det igår.",
+    "expected": "STAY_MUTED"
+  },
+  {
+    "id": "group-we",
+    "text": "Vad tycker ni om det?",
+    "expected": "UNCERTAIN"
+  },
+  {
+    "id": "named-group",
+    "text": "Bruno, vad tycker ni?",
+    "expected": "UNCERTAIN"
+  },
+  {
+    "id": "quoted-address",
+    "text": "Anna said Bruno, can you answer?",
+    "expected": "STAY_MUTED"
+  },
+  {
+    "id": "negative-command",
+    "text": "Bruno, don’t unmute yet; wait.",
+    "expected": "STAY_MUTED"
+  },
+  {
+    "id": "no-name-generic",
+    "text": "What do you think?",
+    "expected": "UNCERTAIN"
+  },
+  {
+    "id": "co-discussion",
+    "text": "Jag och Bruno diskuterade det.",
+    "expected": "STAY_MUTED"
+  }
+]
